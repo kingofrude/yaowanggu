@@ -1,0 +1,1 @@
+"D:\WeChatdevelop\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-0gi4c4ii99d7a16b --n quickstartFunctions --r --project "E:\xiaochenxu_code\project_yaowanggu" --report_first --report

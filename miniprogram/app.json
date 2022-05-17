@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/notice/notice",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabbar_image/首页.png",
+      "selectedIconPath": "images/tabbar_image/首页active.png"
+    }, {
+      "pagePath": "pages/shop/shop",
+      "text": "特色商城",
+      "iconPath": "images/tabbar_image/商城.png",
+      "selectedIconPath": "images/tabbar_image/商城active.png"
+    },{
+      "pagePath": "pages/notice/notice",
+      "text": "景区公告",
+      "iconPath": "images/tabbar_image/通知.png",
+      "selectedIconPath": "images/tabbar_image/通知active.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/tabbar_image/我的.png",
+      "selectedIconPath": "images/tabbar_image/我的active.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
