@@ -1,3 +1,128 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
-<text class="iconfont icon-zhuye"></text>
+<!-- 轮播图部分 -->
+<swiper indicator-dots indicator-color="rgba(255, 255, 255, .8)" indicator-active-color="#666" autoplay circular easing-function="easeInOutCubic" class="indexSwiper">
+  <swiper-item>
+    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+  </swiper-item>
+</swiper>
+<!-- 页面主要内容 -->
+<view class="index_main">
+  <!-- 小程序各个功能 -->
+  <view class="index_main_func">
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+    <a href="">
+      <view>
+        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+      </view>
+      <text>九寨沟</text>
+    </a>
+  </view>
+  <!-- 景点导览图 -->
+  <view class="index_main_map">
+    <image src="../../images/swiper_image/20210929002755_927e8.jpg"></image>
+    <text class="index_main_map_top_text">景区导览图</text>
+    <text class="index_main_map_bottom_text">点击进入</text>
+  </view>
+</view>
+<!-- 底部推荐模块 -->
+<view class="index_footer">
+  <!-- 景区最新公告 -->
+  <view class="index_footer_notice">
+    <view class="index_footer_notice_left">
+      <text>最新</text>
+      <text>公告</text>
+    </view>
+    <view class="index_footer_notice_middle">
+      <view>111111111</view>
+    </view>
+    <view class="index_footer_notice_right">
+      <text>更多 ></text>
+    </view>
+
+  </view>
+  <!-- 景区特色展示 -->
+  <view class="index_footer_tab">
+  <!-- Tab区域 -->
+    <view class="index_footer_tab_text">
+      <a href="#" class="text_active">热门推荐</a>
+      <a href="#">主要景点</a>
+      <a href="#">旅游攻略</a>
+      <a href="#">特色美食</a>
+    </view>
+    <!-- 内容区域 -->
+    <view class="index_footer_tab_content">
+      <view class="index_footer_tab_content_module recommend" wx:if="ture">
+        <view class="box">
+          <view><image src="../../images/swiper_image/20210929002755_927e8.jpg"></image></view>
+          <text>五花海</text>
+        </view>
+        <view class="box">
+          <view><image src="../../images/swiper_image/20210929002755_927e8.jpg"></image></view>
+          <text>五花海</text>
+        </view>
+      </view>
+      <view class="index_footer_tab_content_module tourist" wx:if="false">2</view>
+      <view class="index_footer_tab_content_module strategy" wx:if="false">3</view>
+      <view class="index_footer_tab_content_module food" wx:if="false">4</view>
+    </view>
+  </view>
+</view>

@@ -1,1 +1,126 @@
 /* pages/index/index.wxss */
+/* 轮播图 */
+.indexSwiper {
+  width: 100%;
+}
+.indexSwiper image {
+  width: 100%;
+}
+/* 页面主要内容 */
+.index_main{
+  width: 100%;
+  background: linear-gradient(aquamarine, #fff, #fff)
+}
+/* 小程序各个功能 */
+.index_main_func {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.index_main_func a {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+.index_main_func a image {
+  width: 100rpx;
+  height: 100rpx!important;
+  border-radius: 50%;
+}
+/* 景区导览图 */
+.index_main_map {
+  position: relative;
+  padding: 20rpx;
+}
+.index_main_map image {
+  width: 100%;
+}
+.index_main_map_bottom_text {
+  position: absolute;
+  width: 160rpx;
+  height: 50rpx;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  left: 50%;
+  bottom: 60rpx;
+  transform: translateX(-50%);
+}
+.index_main_map_top_text {
+  position: absolute;
+  font-size: 70rpx;
+  color: #fff;
+  left: 50%;
+  top: 20rpx;
+  transform: translateX(-50%);
+}
+/* 底部推荐模块 */
+.index_footer {
+  width: 100%;
+  background: linear-gradient(#b4facf, #fff);
+  padding: 40rpx 0;
+}
+/* 景区最新公告 */
+.index_footer_notice {
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 80rpx;
+  padding: 0 40rpx;
+  font-size: 26rpx;
+  margin-bottom: 60rpx;
+}
+.index_footer_notice_left text:first-child {
+  color: red;
+}
+.index_footer_notice_left {
+  display: inline-block;
+  margin-right: 20rpx;
+}
+.index_footer_notice_middle {
+  display: inline-block;
+}
+.index_footer_notice_right {
+  display: inline-block;
+  float: right;
+}
+/* 景区特色展示 */
+.index_footer_tab_text {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+}
+.index_footer_tab_text .text_active {
+  font-weight: 700;
+}
+.index_footer_tab_content_module {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.index_footer_tab_content {
+  width: 100%;
+}
+.index_footer_tab_content_module .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+}
+.index_footer_tab_content_module .box view{
+  width: 100%;
+}
+.index_footer_tab_content_module .box view image {
+  width: 100%;
+}
+.index_footer_tab_content .content_active {
+  display: block;
+}
