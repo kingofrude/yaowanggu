@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/shop/shop",
     "pages/notice/notice",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/lineMap/lineMap",
+    "pages/guideMap/guideMap",
+    "pages/introduce/introduce",
+    "pages/travelAssis/travelAssis"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

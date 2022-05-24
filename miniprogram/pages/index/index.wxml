@@ -1,87 +1,49 @@
 <!--pages/index/index.wxml-->
 <!-- 轮播图部分 -->
 <swiper indicator-dots indicator-color="rgba(255, 255, 255, .8)" indicator-active-color="#666" autoplay circular easing-function="easeInOutCubic" class="indexSwiper">
-  <swiper-item>
-    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-  </swiper-item>
-  <swiper-item>
-    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-  </swiper-item>
-  <swiper-item>
-    <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
+  <swiper-item wx:for="{{swiperImgUrl}}" wx:key="{{item._id}}">
+    <image src="{{item.imageurl}}" mode="widthFix"></image>
   </swiper-item>
 </swiper>
 <!-- 页面主要内容 -->
 <view class="index_main">
   <!-- 小程序各个功能 -->
   <view class="index_main_func">
-    <a href="">
+  <!-- 导航去特色商城页面 -->
+    <navigator url="/pages/shop/shop" open-type="switchTab">
       <view>
         <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
       </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
+      <text>本地特产</text>
+    </navigator>
+    <!-- 导航去景点介绍页面 -->
+    <navigator url="/pages/introduce/introduce" open-type="navigate">
       <view>
         <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
       </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
+      <text>景点介绍</text>
+    </navigator>
+    <!-- 导航去精品路线页面 -->
+    <navigator url="/pages/lineMap/lineMap">
       <view>
         <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
       </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
+      <text>精品路线</text>
+    </navigator>
+    <!-- 导航去游玩助手页面 -->
+    <navigator url="/pages/travelAssis/travelAssis">
       <view>
         <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
       </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
-    <a href="">
-      <view>
-        <image src="../../images/swiper_image/20210929002755_927e8.jpg" mode="widthFix"></image>
-      </view>
-      <text>九寨沟</text>
-    </a>
+      <text>游玩助手</text>
+    </navigator>
   </view>
   <!-- 景点导览图 -->
-  <view class="index_main_map">
+  <navigator url="/pages/guideMap/guideMap" open-type="navigate" class="index_main_map">
     <image src="../../images/swiper_image/20210929002755_927e8.jpg"></image>
     <text class="index_main_map_top_text">景区导览图</text>
     <text class="index_main_map_bottom_text">点击进入</text>
-  </view>
+  </navigator>
 </view>
 <!-- 底部推荐模块 -->
 <view class="index_footer">
@@ -95,7 +57,7 @@
       <view>111111111</view>
     </view>
     <view class="index_footer_notice_right">
-      <text>更多 ></text>
+      <navigator url="/pages/notice/notice" open-type="switchTab"><text>更多 ></text></navigator>
     </view>
 
   </view>

@@ -1,19 +1,18 @@
-// pages/index/index.js
+// pages/lineMap/lineMap.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    swiperImgUrl: []
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const db = wx.cloud.database()
-    db.collection('index_swiper').get().then(res => {this.setData({swiperImgUrl: res.data})}).catch(err => {console.log(err);})
+
   },
 
   /**

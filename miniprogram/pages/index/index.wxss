@@ -9,23 +9,28 @@
 /* 页面主要内容 */
 .index_main{
   width: 100%;
-  background: linear-gradient(aquamarine, #fff, #fff)
+  background: linear-gradient(aquamarine, #fff, #fff);
+  border-radius: 20rpx 20rpx 0 0
 }
 /* 小程序各个功能 */
 .index_main_func {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 20rpx;
 }
-.index_main_func a {
+.index_main_func navigator {
   display: flex;
   flex-direction: column;
   width: 20%;
-  padding: 10rpx;
   box-sizing: border-box;
   align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+  font-family: '楷体';
 }
-.index_main_func a image {
+.index_main_func navigator image {
   width: 100rpx;
   height: 100rpx!important;
   border-radius: 50%;
@@ -33,26 +38,31 @@
 /* 景区导览图 */
 .index_main_map {
   position: relative;
-  padding: 20rpx;
+  padding: 0 10rpx;
+  margin-bottom: -10rpx;
 }
 .index_main_map image {
   width: 100%;
+  border-radius: 30rpx;
 }
 .index_main_map_bottom_text {
   position: absolute;
-  width: 160rpx;
+  width: 200rpx;
   height: 50rpx;
-  background-color: green;
+  background-color: rgba(115, 253, 223, .5);
   color: #fff;
   text-align: center;
   line-height: 50rpx;
   left: 50%;
   bottom: 60rpx;
   transform: translateX(-50%);
+  border-radius: 20rpx;
+  font-family: '楷体';
 }
 .index_main_map_top_text {
   position: absolute;
   font-size: 70rpx;
+  font-family: '楷体';
   color: #fff;
   left: 50%;
   top: 20rpx;
