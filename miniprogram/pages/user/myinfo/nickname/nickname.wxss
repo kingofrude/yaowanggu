@@ -1,0 +1,11 @@
+/* pages/user/myinfo/editNickname/editNickname.wxss */
+.graydivide {
+  /*灰色分割条*/
+  height: 4px;
+  background-color: #ededed;
+  position: relative;
+  top: 0px;
+}
+input{
+  border:2px solid #b4b5b6;
+}

@@ -1,0 +1,6 @@
+<!--pages/user/myinfo/phone/phone.wxml-->
+<!-- 设置手机号 -->
+<input type="number" value="{{phoneNumber}}"  bindinput="handleText" />
+<button bindtap="handleBtn">设置手机号</button>
+
+

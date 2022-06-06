@@ -1,0 +1,6 @@
+/* pages/user/myinfo/signature/signature.wxss */
+input{
+  border:2px solid #ededed;
+  display: flex;
+  align-items: center;
+}

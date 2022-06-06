@@ -1,0 +1,21 @@
+<!--pages/user/myinfo/gender/gender.wxml-->
+<!-- 设置性别 -->
+<!-- <input type="text" value="{{gender}}" bindinput="handleText"/> -->
+
+<button bindtap="handleBtn">提交修改</button>
+
+<view class='top'>
+<view class='top-text'> 下拉选择性别</view>
+<!-- 下拉框 -->
+<view class='top-selected' bindtap='bindShowMsg'>
+  <text>{{gender}}</text>
+  <image src='/images/icon/down.png'></image>
+</view>
+<!-- 下拉需要显示的列表 -->
+<view class="select_box" wx:if="{{select}}">
+  <view wx:for="{{genderList}}" wx:key="unique">
+    <view class="select_one" bindtap="mySelect" 
+    data-name="{{item}}">{{item}}</view>
+  </view>
+</view>
+</view>

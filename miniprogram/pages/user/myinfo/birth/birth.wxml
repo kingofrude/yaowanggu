@@ -1,0 +1,15 @@
+<!--pages/user/myinfo/birth/birth.wxml-->
+<!-- 设置出生日期 -->
+<!-- <input type="text" value="{{signature}}" bindinput="handleText"/> -->
+
+<button bindtap="handleBtn">设置出生日期</button>
+
+
+<picker mode="date" header-text="选择时间"  value="{{birth}}" 
+bindchange="bindDateChange">
+  <view class="chooseTime">
+    <text class="color3">选择时间：</text>
+    <text class="color6">{{birth}}</text>
+    <text class="timeIcon">▼</text>
+  </view>
+</picker>

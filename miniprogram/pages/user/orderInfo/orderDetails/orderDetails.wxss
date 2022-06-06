@@ -1,0 +1,39 @@
+/* pages/user/orderInfo/orderDetails/orderDetails.wxss */
+
+.graydivide {
+  /*灰色分割条*/
+  height:5px;
+  background-color: #ededed;
+  position: relative;
+  top: 0px;
+}
+.item {
+  height: 70rpx;
+  background-color: #fff;
+  margin: 8rpx;
+  display: flex;
+  border-radius: 20rpx;
+  line-height: 70rpx;
+  font-size:medium;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 20px;
+  position: relative;
+  left: 0px;
+  flex-direction: column;
+  color: #000000;
+  /* background-color: skyblue; */
+}
+.right {
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-grow: 1;
+  color: #6b6767;
+  margin-right: 0rpx;
+  line-height: 70rpx;
+  font-size:30rpx;
+  /* background-color: pink; */
+}

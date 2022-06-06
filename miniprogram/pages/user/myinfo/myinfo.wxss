@@ -1,0 +1,65 @@
+/* pages/myinfo/myinfo.wxss */
+
+.nav {
+  display: flex;
+  background-color: #fff;
+}
+.top {
+  /*头像*/
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+  border-color: #ffffff;
+}
+.nickname {
+  /*昵称*/
+  color: #000000;
+  font-size: 20px;
+  font-weight: normal;
+  width: 320rpx;
+  height: 120px;
+  line-height: 120px;
+}
+.graydivide {
+  /*灰色分割条*/
+  height: 10px;
+  background-color: #ededed;
+  position: relative;
+  top: 0px;
+}
+.item {
+  height: 70rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  display: flex;
+  border-radius: 20rpx;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 70px;
+  position: relative;
+  left: 0px;
+  flex-direction: column;
+  color: #000000;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #ccc;
+  margin-right: 20rpx;
+  line-height: 70rpx;
+}
+
+
+
+

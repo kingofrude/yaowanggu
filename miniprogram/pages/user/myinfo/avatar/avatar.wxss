@@ -1,0 +1,7 @@
+/* pages/user/myinfo/editAvatar/editAvatar.wxss */
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10%;
+  margin:30rpx
+}

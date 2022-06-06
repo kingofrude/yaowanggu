@@ -89,7 +89,7 @@
 }
 .index_footer_notice_right {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 /* 景区特色展示 */
 .index_footer_tab_text {

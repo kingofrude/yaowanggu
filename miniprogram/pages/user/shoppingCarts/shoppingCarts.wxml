@@ -1,0 +1,48 @@
+<!--pages/user/shoppingCarts/shoppingCarts.wxml-->
+<view class="product-container">
+	<view class="product-list" style='height:{{height}}px'>
+		<view class="product-item" wx:for="{{slideProductList}}" wx:for-index="index" wx:key='slideProductList'>
+			<slide-delete pid="{{item.id}}" bindaction="handleSlideDelete" wx:key='slideProductList'>
+				<view class="product-item-wrap">
+					<icon type="{{item.select}}" size="19" data-index="{{index}}" data-select="{{item.select}}" bindtap="change" color="red" />
+					<view class="product_img">
+						<image src="{{item.url}}" class='goods-img' mode="widthFix"></image>
+					</view>
+					<view class="product-movable-item">
+						<view class="goods-name">{{item.name}}</view>
+						<view class="goods-type">最新款
+							<text>{{item.style}}</text>
+						</view>
+						<view class="goods-price">￥{{item.price}}</view>
+					</view>
+					<view class="product-movable-item product-movable-item-amount">
+						<view class="num-box">
+							<view class="btn-groups">
+								<button class="goods-btn btn-minus" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">—</button>
+								<input class='num' type='number' data-index="{{index}}" bindblur="numIputBlur" bindinput='inputNum' value='{{item.num}}'></input>
+								<button class="goods-btn btn-add" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</button>
+							</view>
+						</view>
+					</view>
+				</view>
+			</slide-delete>
+		</view>
+	</view>
+	<view class="cart-fixbar">
+		<view class="allSelect">
+			<icon type="{{allSelect}}" size="19" data-select="{{allSelect}}" bindtap="allSelect" color='#fff' />
+			<view class="allSelect-text">全选</view>
+		</view>
+		<view class="count">
+			<text>合计：</text>￥{{count}}
+		</view>
+		<view class="order">
+			<view class="orders">
+				去结算
+				<text class="allnum">({{num}})</text>
+			</view>
+
+		</view>
+	</view>
+</view>
+

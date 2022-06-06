@@ -3,7 +3,26 @@
     "pages/index/index",
     "pages/shop/shop",
     "pages/notice/notice",
-    "pages/user/user"
+
+    "pages/user/user",
+    "pages/user/myinfo/myinfo",
+    "pages/user/myinfo/signature/signature",
+    "pages/user/myinfo/phone/phone",
+    "pages/user/myinfo/nickname/nickname",
+    "pages/user/myinfo/avatar/avatar",
+    "pages/user/myinfo/gender/gender",
+    "pages/user/myinfo/birth/birth",
+    "pages/user/myAddress/myAddress",
+    "pages/user/myCollection/myCollection",
+    "pages/user/shoppingCarts/shoppingCarts",
+    "pages/user/orderInfo/orderInfo",
+    "pages/user/feedback/feedback",
+    "pages/user/userSettings/userSettings",
+    "pages/user/orderInfo/orderDetails/orderDetails"
+
+
+    
+    
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -35,6 +54,5 @@
       "selectedIconPath": "images/tabbar_image/我的active.png"
     }]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,78 @@
+input {
+  border: 2px solid #ededed;
+  display: flex;
+  align-items: center;
+}
+
+
+/* 顶部 */
+.top {
+  width: 100vw;
+  height: 80rpx;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  font-size: 34rpx;
+  border-bottom: 1px solid #000;
+}
+
+.top-text {
+  float: left
+}
+
+/* 下拉框 */
+.top-selected {
+  width: 50%;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+  font-size: 30rpx;
+
+}
+
+/* 下拉内容 */
+.select_box {
+  background-color: #fff;
+  padding: 0 20rpx;
+  width: 50%;
+  float: right;
+  position: relative;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  text-align: left;
+  animation: myfirst 0.5s;
+  font-size: 30rpx;
+
+}
+
+.select_one {
+  padding-left: 20rpx;
+  width: 100%;
+  height: 60rpx;
+  position: relative;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+
+}
+
+/* 下拉过度效果 */
+@keyframes myfirst {
+  from {
+    height: 0rpx;
+  }
+  to {
+    height: 210rpx;
+  }
+}
+
+/* 下拉图标 */
+.top-selected image {
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 20rpx;
+}

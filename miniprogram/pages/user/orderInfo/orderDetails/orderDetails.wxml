@@ -1,0 +1,73 @@
+<!--pages/user/orderInfo/orderDetails/orderDetails.wxml-->
+<view>
+  <view class='item'>
+    <view class="left">订单完成情况:</view>
+    <view class="right">已完成 /待发货 /待收货 </view>
+  </view>
+
+
+
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+
+  <view class='item'>
+    <view class="left">收货人</view>
+    <view class="right">{{consigneeName}} - {{phoneNumber}} </view>
+  </view>
+  <view class='item'>
+    <view class="left">收货地址</view>
+    <view class="right">{{consigneeRegion}} {{detailedAddress}}</view>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <view class='item'>
+    <view class="left">发货人</view>
+    <view class="right">泗马沟村药王谷景区 13012341234   </view>
+    <button   bindtap="copy">  一键复制 </button>
+  </view>
+  <view class='item'>
+    <view class="left"> 发货地址</view>
+    <view class="right">北京市-房山区-泗马沟村-药王谷</view>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <view >
+    <view style="font-size: large;">物流信息</view>
+    <view class=''> 已签收（时间）</view>
+    <view class=''>达到快递站点（时间）</view> 
+    物流信息小程序提供接口？
+    https://developers.weixin.qq.com/miniprogram/dev/platform-capabilities/industry/express/introduction.html
+  </view>
+  
+
+  
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <view class='item' style="height: 300rpx;background-color: aquamarine;" bindtap="">
+  物品信息（点击跳转到商品页面）</view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <view>
+    <view class='item'>
+      <view class="left">快递单号</view>
+      <view class="right">（一键复制）{{1}}</view>
+    </view>
+    <view class='item'>
+      <view class="left">订单编号</view>
+      <view class="right">订单编号{{1}}</view>
+    </view>
+
+    <view class='item'>
+      <view class="left">付款时间</view>
+      <view class="right">付款时间{{1}}</view>
+    </view>
+
+    <view class='item'>
+      <view class="left">发货时间</view>
+      <view class="right">发货时间{{1}}</view>
+    </view>
+
+    <!--间隔灰横条-->
+    <view class="graydivide"></view>
+  </view>
+</view>

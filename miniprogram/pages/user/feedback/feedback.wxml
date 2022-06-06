@@ -1,0 +1,19 @@
+<!--pages/user/feedback/feedback.wxml-->
+<!-- 自己写得提交意见反馈-->
+<!-- <input type="text" value="{{feedback}}" bindinput="handleText" />
+<button bindtap="handleBtn">提交意见反馈</button> -->
+
+<!-- 微信自带的反馈按钮 -->
+<button class="item" open-type="feedback">
+  <view class="item_left item">
+    <view class="icon">
+      <image src="" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="item_title">意见反馈</view>
+  </view>
+  <view class="item_right">
+    <view class="arrow">
+      <image src="" style="width:20px;height:20px;"></image>
+    </view>
+  </view>
+</button>

@@ -1,0 +1,4 @@
+<!--pages/user/myinfo/signature/signature.wxml-->
+<!-- 设置个性签名 -->
+<input type="text" value="{{signature}}" bindinput="handleText"/>
+<button bindtap="handleBtn">设置个性签名</button>
