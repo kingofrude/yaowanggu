@@ -1,1 +1,58 @@
-/* pages/shop/shop.wxss */
+page {
+  height: 100%;
+}
+.cates {
+  height: 100%;
+}
+.cates .cates_container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.cates .cates_container .left_menu {
+  flex: 2;
+  width: 35%;
+}
+.cates .cates_container .left_menu .menu_item {
+  height: 190rpx;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cates .cates_container .left_menu .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cates .cates_container .right_content {
+  flex: 5;
+  width: 65%;
+}
+.cates .cates_container .right_content .goods_group .goods_title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  
+
+}
+.cates .cates_container .right_content .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+.cates .cates_container .right_content .goods_group .goods_list .img_style {
+  width: 50%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.cates .cates_container .right_content .goods_group .goods_list navigator {
+  width: 33.3%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

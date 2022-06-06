@@ -7,7 +7,9 @@
     "pages/lineMap/lineMap",
     "pages/guideMap/guideMap",
     "pages/introduce/introduce",
-    "pages/travelAssis/travelAssis"
+    "pages/travelAssis/travelAssis",
+    "pages/shop_detail/shop_detail",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

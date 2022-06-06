@@ -1,0 +1,40 @@
+<!--pages/shop_detail/shop_detail.wxml-->
+<!--轮播图-->
+<swiper class="swiper_container" indicator-dots="true" circular="true">
+  <swiper-item class="swiper_item">
+    <image mode="widthFix" src="{{query.img1}}"></image>
+  </swiper-item>
+  <swiper-item class="swiper_item">
+    <image mode="widthFix" src="{{query.img2}}"></image>
+  </swiper-item>
+</swiper>
+
+<!--商品价格-->
+<view class="goods_price">￥{{query.price}}</view>
+<!--商品介绍-->
+<view class="goods_name">{{query.message}}</view>
+
+<!-- 底部标签栏 -->
+<view class="btm_tool">
+  
+  <view class="tool_item">
+    <view class="iconfont icon-kefu"></view>
+    <view>客服</view>
+    <button open-type="contact"></button>
+  </view>
+
+   <view class="tool_item">
+    <view class="iconfont icon-fenxiang"></view>
+    <view>分享</view>
+    <button open-type="share"></button>
+  </view>
+
+   <navigator  url="/pages/cart/cart" class="tool_item">
+    <view class="iconfont icon-gouwuchekong"></view>
+    <view>购物车</view>
+  </navigator>
+
+   <view class="tool_item_btn_cart" bindtap="handleCartAdd">加入购物车</view>
+    
+   <view class="tool_item_btn_buy">立即购买</view>
+</view>

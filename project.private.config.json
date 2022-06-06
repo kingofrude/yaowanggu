@@ -53,16 +53,27 @@
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "路线地图",
           "pathName": "pages/lineMap/lineMap",
+=======
+          "name": "",
+          "pathName": "pages/shop/shop",
+>>>>>>> master
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "导览图",
           "pathName": "pages/guideMap/guideMap",
           "query": "",
+=======
+          "name": "",
+          "pathName": "pages/shop_detail/shop_detail",
+          "query": "id=1&title=%E8%8D%89%E8%8D%AF1",
+>>>>>>> master
           "launchMode": "default",
           "scene": null
         }

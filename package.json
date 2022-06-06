@@ -1,5 +1,22 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "@vant/weapp": "^1.10.3"
   }
+=======
+  "name": "item1",
+  "version": "1.0.0",
+  "description": "这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：",
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.weixin.qq.com/wx_wx755017f12b8e8faf/yaowangu.git"
+  },
+  "author": "",
+  "license": "ISC"
+>>>>>>> master
 }
