@@ -101,36 +101,3 @@
   display: inline-block;
   float: right;
 }
-/* 景区特色展示 */
-.index_footer_tab_text {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 40rpx;
-}
-.index_footer_tab_text .text_active {
-  font-weight: 700;
-}
-.index_footer_tab_content_module {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.index_footer_tab_content {
-  width: 100%;
-}
-.index_footer_tab_content_module .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 49%;
-}
-.index_footer_tab_content_module .box view{
-  width: 100%;
-}
-.index_footer_tab_content_module .box view image {
-  width: 100%;
-}
-.index_footer_tab_content .content_active {
-  display: block;
-}

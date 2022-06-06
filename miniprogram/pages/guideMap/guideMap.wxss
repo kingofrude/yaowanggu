@@ -1,1 +1,7 @@
 /* pages/guideMap/guideMap.wxss */
+.guidemap {
+  width: 100%;
+}
+.guidemap image {
+  width: 100%;
+}

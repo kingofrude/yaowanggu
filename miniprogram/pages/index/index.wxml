@@ -59,32 +59,12 @@
     <view class="index_footer_notice_right">
       <navigator url="/pages/notice/notice" open-type="switchTab"><text>更多 ></text></navigator>
     </view>
-
   </view>
   <!-- 景区特色展示 -->
-  <view class="index_footer_tab">
-  <!-- Tab区域 -->
-    <view class="index_footer_tab_text">
-      <a href="#" class="text_active">热门推荐</a>
-      <a href="#">主要景点</a>
-      <a href="#">旅游攻略</a>
-      <a href="#">特色美食</a>
-    </view>
-    <!-- 内容区域 -->
-    <view class="index_footer_tab_content">
-      <view class="index_footer_tab_content_module recommend" wx:if="ture">
-        <view class="box">
-          <view><image src="../../images/swiper_image/20210929002755_927e8.jpg"></image></view>
-          <text>五花海</text>
-        </view>
-        <view class="box">
-          <view><image src="../../images/swiper_image/20210929002755_927e8.jpg"></image></view>
-          <text>五花海</text>
-        </view>
-      </view>
-      <view class="index_footer_tab_content_module tourist" wx:if="false">2</view>
-      <view class="index_footer_tab_content_module strategy" wx:if="false">3</view>
-      <view class="index_footer_tab_content_module food" wx:if="false">4</view>
-    </view>
-  </view>
+  <van-tabs active="{{ active }}" bind:change="onChange" sticky animated swipeable>
+  <van-tab title="热门推荐">内容 1</van-tab>
+  <van-tab title="主要景点">内容 2</van-tab>
+  <van-tab title="旅游攻略">内容 3</van-tab>
+  <van-tab title="特色美食">内容 4</van-tab>
+</van-tabs>
 </view>

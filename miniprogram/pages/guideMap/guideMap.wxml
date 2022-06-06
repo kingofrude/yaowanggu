@@ -1,2 +1,4 @@
 <!--pages/guideMap/guideMap.wxml-->
-<text>pages/guideMap/guideMap.wxml</text>
+<view class="guidemap">
+<image src="/images/guide_map/微信图片_20220528151552.jpg" mode="widthFix"></image>
+</view>

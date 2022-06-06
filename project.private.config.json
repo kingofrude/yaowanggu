@@ -51,6 +51,20 @@
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "路线地图",
+          "pathName": "pages/lineMap/lineMap",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "导览图",
+          "pathName": "pages/guideMap/guideMap",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
