@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/shop/shop",
     "pages/notice/notice",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/shop_detail/shop_detail",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -35,6 +37,6 @@
       "selectedIconPath": "images/tabbar_image/我的active.png"
     }]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
+  
 }

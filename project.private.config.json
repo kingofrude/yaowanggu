@@ -51,6 +51,20 @@
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/shop/shop",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/shop_detail/shop_detail",
+          "query": "id=1&title=%E8%8D%89%E8%8D%AF1",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

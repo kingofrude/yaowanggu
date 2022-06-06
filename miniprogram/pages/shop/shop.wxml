@@ -1,2 +1,33 @@
-<!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<view class="cates">
+  <SearchInput></SearchInput>
+  <view class="cates_container">
+    <!-- 左侧菜单 -->
+    <scroll-view scroll-y class="left_menu">
+      <view 
+      class="menu_item {{index===currentIndex?'active':''}}" 
+      wx:for="{{datalist}}" 
+      wx:key="*this"
+      bindtap="handleItemTap"
+      data-index="{{index}}"
+      >
+        {{item.name}}
+      </view>
+    </scroll-view>
+    <!-- 右侧商品内容 -->
+    <scroll-view scroll-y scroll-top="{{scrollTop}}" class="right_content">
+      <view class="goods_group"
+       wx:for="{{datalist}}"
+       wx:for-index="index1"
+       wx:for-item="item1">
+        <navigator class="goods_list"wx:for="{{item1.class}}"
+        wx:for-index="index2"
+          wx:for-item="item2" 
+          wx:key="id"
+          url="/pages/shop_detail/shop_detail?id={{item2.id}}&title={{item2.name}}&img1={{item2.img1}}&img2={{item2.img2}}&message={{item2.message}}&price={{item2.price}}">
+          <view class="goods_title">{{item2.name}}</view>
+          <image class="img_style" mode="widthFix" src="{{item2.icon}}"></image>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>
