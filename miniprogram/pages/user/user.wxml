@@ -34,7 +34,7 @@
           <!--图片-->
           <image class="icon-picture" src="../../images/user_image/GRZL.png"></image>
         </view>
-        <view class="text">个人资料-转user</view>
+        <view class="text">个人资料</view>
         <!--文字-->
         <view class="right-icon">
           <!--图片-->
