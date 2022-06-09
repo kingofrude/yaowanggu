@@ -1,2 +1,173 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- 先登录 -->
+<view class="user">
+  <view class="user-info">
+    <image src="{{userPhoto}}"> </image>
+    <text wx:if="{{logged}}"> 欢迎您：{{nickName}}</text>
+    <button wx:else disabled="{{disabled}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> 授权登录</button>
+
+  </view>
+</view>
+
+<view wx:if="{{logged}}">
+
+  <!--用户头像和昵称-->
+  <view class="userInformation">
+    <view class="userInfomation-avatar">
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <image src="{{userPhoto}}"> </image>
+    </view>
+    <view class="userInformation-nickname">
+      <!-- <open-data type="userNickName"></open-data> -->
+      {{nickName}}
+    </view>
+  </view>
+
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+
+  <!--个人资料-->
+  <view class='function' bindtap='personal'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/GRZL.png"></image>
+        </view>
+        <view class="text">个人资料</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+
+  <!--我的收藏-->
+  <view class='function' bindtap="myCollection">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/WDSC.png"></image>
+        </view>
+        <view class="text">我的收藏</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--间隔白横线-->
+  <view class="whitedivide"></view>
+  <!--购物车-->
+  <view class='function' bindtap="shoppingCarts">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/GWC.png"></image>
+        </view>
+        <view class="text">购物车</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--间隔白横线-->
+  <view class="whitedivide"></view>
+  <!--收货地址-->
+  <view class='function' bindtap='myAddress'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/SHDZ.png"></image>
+        </view>
+        <view class="text">收货地址</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--间隔白横线-->
+  <view class="whitedivide"></view>
+
+  <!--订单信息-->
+  <view class='function' bindtap="orderInfo">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/DDXX.png"></image>
+        </view>
+        <view class="text">订单信息</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!--意见反馈-->
+  <view class='function' bindtap="feedback">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/YJFK.png"></image>
+        </view>
+        <view class="text">意见反馈</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--间隔白横线-->
+  <view class="whitedivide"></view>
+
+  <!--设置-->
+  <view class='function' bindtap="userSettings">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/SZ.png"></image>
+        </view>
+        <view class="text">用户设置</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

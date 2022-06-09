@@ -1,1 +1,101 @@
-/* pages/user/user.wxss */
+.user-info{height: 150rpx;border:1px solid #dbdada;border-left: none;border-right: none;
+            display: flex;align-items: center;}
+.user-info image{
+   height: 100rpx;width: 100rpx;
+   border-radius: 50%;overflow: hidden;}
+.user-info text{  margin-left: 10rpx;}
+.user-info button{  margin:0%; }
+
+page{/*页面背景—————统一浅灰*/
+  background-color: #ededed;
+}
+.userInformation {/*头像&微信名称*/
+  display: flex;
+  background-color: #ffffff;
+}
+.userInfomation-avatar {/*头像*/ 
+  background-color: #ffffff;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 10rpx;
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+  border-color: #ffffff;
+}
+
+.userInfomation-avatar image{
+  height: 160rpx;
+  width: 160rpx;
+ overflow: hidden;}
+
+.userInformation-nickname {/*昵称*/
+  color: #000000;
+  font-size: 20px;
+  font-weight: normal;
+  width: 400rpx;
+  height: 120px;
+  line-height: 120px;
+}
+
+.whitedivide {/*白色分割线*/
+  height: 1px;
+  background-color: #ffffff;
+  width: 56px;
+  position:relative;
+  top: 0px;
+}
+
+.graydivide {/*灰色分割条*/
+  height: 10px;
+  background-color: #ededed;
+  position:relative;
+  top: 0px;
+}
+
+.function {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 0rpx;
+  overflow: hidden;
+  display: flex;/**/
+}
+
+.functioninformation {/*左边动作图标&文字说明*/
+  display: flex;
+}
+
+.left-icon {
+  display: flex;
+  margin: 14px;
+}
+
+.icon-picture {/*图标*/
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+
+.text {/*文字*/
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  width: 68px;
+  position: relative;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+
+.right-icon {/*右边图片*/
+  display: flex;
+  margin: 14px;
+  position: absolute;
+  right: 14px;
+}
+

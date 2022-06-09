@@ -1,0 +1,11 @@
+<!--pages/user/myinfo/editAvatar/editAvatar.wxml-->
+<!-- 设置头像 -->
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> 
+使用微信头像</button>
+ <!--间隔灰横条-->
+ <view class="graydivide"></view>
+<button bindtap="handleBtn">自定义头像</button> 
+<!--间隔灰横条-->
+ <view class="graydivide"></view>
+
+<image src="{{userPhoto}}" bindtap="handleUploadImage"></image>

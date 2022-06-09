@@ -1,0 +1,6 @@
+/* pages/user/myinfo/phone/phone.wxss */
+input{
+  border:2px solid #ededed;
+  display: flex;
+  align-items: center;
+}

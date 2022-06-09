@@ -1,0 +1,48 @@
+<!--pages/myinfo/myinfo.wxml-->
+<!-- 全局 -->
+<view class='content'>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 修改头像 -->
+  <view class='item' bindtap='editAvatar'>
+    <text class='left'> 头像 </text>
+    <text class='right'> 修改 > </text>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 修改昵称 -->
+  <view class='item' bindtap='editNickname'>
+    <text class='left'> 昵称 </text>
+    <text class='right'> 修改 > </text>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 性别 -->
+  <view class='item' bindtap='gender'>
+    <view class='left'> 性别 </view>
+    <view class='right'> 设置 > </view>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 个性签名  -->
+  <view class='item' bindtap="signature">
+    <text class='left'> 个性签名 </text>
+    <text class='right'> 设置 > </text>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 出生日期 -->
+  <view class='item' bindtap='birth'>
+    <text class='left'> 出生日期</text>
+    <text class='right'> 设置 > </text>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+  <!-- 手机号 -->
+  <view class='item' bindtap='phone'>
+    <text class='left'> 手机号 </text>
+    <text class='right'> 修改 > </text>
+  </view>
+  <!--间隔灰横条-->
+  <view class="graydivide"></view>
+</view>

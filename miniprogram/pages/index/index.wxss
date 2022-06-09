@@ -99,5 +99,5 @@
 }
 .index_footer_notice_right {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }

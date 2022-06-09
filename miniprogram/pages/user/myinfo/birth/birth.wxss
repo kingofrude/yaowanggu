@@ -1,0 +1,16 @@
+.chooseTime{
+  font-size: 30rpx;
+  text-align: center;
+
+}
+.color3{
+  color: #333;
+}
+.color6{
+  color: #666;
+}
+.timeIcon{
+  color:#666;
+  font-size:18rpx;
+  margin-left: 5rpx;
+}
