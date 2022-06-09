@@ -21,7 +21,9 @@
     "pages/user/orderInfo/orderInfo",
     "pages/user/feedback/feedback",
     "pages/user/userSettings/userSettings",
-    "pages/user/orderInfo/orderDetails/orderDetails"
+    "pages/user/orderInfo/orderDetails/orderDetails",
+    "pages/shop_detail/shop_detail",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
