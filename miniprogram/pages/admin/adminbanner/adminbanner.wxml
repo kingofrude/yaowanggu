@@ -1,0 +1,2 @@
+<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+

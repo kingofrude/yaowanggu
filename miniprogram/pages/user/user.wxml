@@ -170,4 +170,26 @@
       </view>
     </view>
   </view>
+
+  <!--间隔白横线-->
+  <view class="whitedivide"></view>
+
+  <!-- 管理员登录入口 -->
+  <view class='function' bindtap="adminLogin">
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/GRZL.png"></image>
+        </view>
+        <view class="text">管理界面</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/user_image/JTY.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

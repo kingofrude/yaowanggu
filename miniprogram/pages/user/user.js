@@ -138,6 +138,13 @@ userSettings:function()
    })
 },
 
+// 管理员页面跳转
+adminLogin(){
+  wx.navigateTo({
+    url: '../admin/adminlogin/adminlogin',
+  })
+},
+
   /**
    * 生命周期函数--监听页面加载
    */

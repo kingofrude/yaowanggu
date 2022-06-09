@@ -1,8 +1,4 @@
 {
-  "setting": {
-    "compileHotReLoad": true,
-    "urlCheck": false
-  },
   "condition": {
     "miniprogram": {
       "list": [
@@ -12,81 +8,38 @@
           "query": ""
         },
         {
-          "name": "pages/getOpenId/index",
-          "pathName": "pages/getOpenId/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/deployService/index",
-          "pathName": "pages/deployService/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/selectRecord/index",
-          "pathName": "pages/selectRecord/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sumRecordResult/index",
-          "pathName": "pages/sumRecordResult/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/updateRecord/index",
-          "pathName": "pages/updateRecord/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/updateRecordResult/index",
-          "pathName": "pages/updateRecordResult/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/updateRecordSuccess/index",
-          "pathName": "pages/updateRecordSuccess/index",
-          "query": "",
-          "scene": null
-        },
-        {
-<<<<<<< HEAD
-          "name": "路线地图",
-          "pathName": "pages/lineMap/lineMap",
-=======
           "name": "",
-          "pathName": "pages/shop/shop",
->>>>>>> master
+          "pathName": "pages/user/user",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-<<<<<<< HEAD
-          "name": "导览图",
-          "pathName": "pages/guideMap/guideMap",
-          "query": ""
+          "name": "",
+          "pathName": "pages/admin/adminlogin/adminlogin",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/user/myinfo/gender/gender",
+          "pathName": "pages/admin/admin",
           "query": "",
-=======
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "",
-          "pathName": "pages/shop_detail/shop_detail",
-          "query": "id=1&title=%E8%8D%89%E8%8D%AF1",
->>>>>>> master
+          "pathName": "pages/admin/adminbanner/adminbanner",
+          "query": "",
           "launchMode": "default",
           "scene": null
         }
       ]
     }
   },
-  "projectname": "project_yaowanggu",
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-  "libVersion": "2.15.0"
+  "setting": {
+    "compileHotReLoad": true
+  }
 }

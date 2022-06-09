@@ -1,0 +1,5 @@
+<van-cell-group inset>
+  <van-cell is-link size="large" title="首页轮播图管理" link-type="navigateTo" url="/pages/admin/adminbanner/adminbanner" />
+  <van-cell is-link size="large" title="商品管理" link-type="navigateTo" url="/pages/admin/admingoods/admingoods" />
+  <van-cell is-link size="large" title="通知栏管理" link-type="navigateTo" url="/pages/admin/adminarticle/adminarticle" />
+</van-cell-group>
